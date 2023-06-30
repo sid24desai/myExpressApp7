@@ -32,6 +32,7 @@ jobs:
           git show --name-only --oneline ${{ github.sha }} | tail -n +2 | xargs zip release.zip
 
 
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
